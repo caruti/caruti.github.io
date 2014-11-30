@@ -1,0 +1,333 @@
+@import url("http://fix.cl/test/carta/css/fontello.css");
+
+::selection
+{
+    background: hsla(0,84%,33%,1);
+    color: #fff;
+    text-shadow:none;
+}
+
+::-moz-selection
+{
+    background: hsla(0,84%,33%,1);
+    color: #fff;
+    text-shadow:none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+  background-image: url(../img/Amor-Embrace-1050x1680.jpg)
+    
+}
+
+#perspectiva{
+    position:absolute;
+    top:150px;
+    left:50%;
+    margin-left: -200px;
+    -webkit-perspective:800;
+    -moz-perspective:800;
+    -o-perspective:800;
+    -ms-perspective:800;
+    perspective:800;
+}
+
+#contenedor{
+  border-radius: 5px;
+    width: 400px;
+    height: 780px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.cara{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    backface-visibility:hidden;
+}
+
+.cara h1{
+    cursor: help;
+    color: hsla(0,0%,20%,1);
+    text-shadow: 0px 1px 1px hsla(0,0%,100%,1);
+    font-family: 'Bad Script', cursive;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 110px;
+}
+
+
+
+.trasera{
+    background: -webkit-linear-gradient(top, hsla(0,0%,95%,1) 0%, hsla(0,0%,95%,1) 100%);
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    -o-transform:rotateY(-180deg);
+    -ms-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+}
+
+#abrir{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 0;
+    width: 80px;
+    border-top: 175px solid hsla(240,100%,100%,1);
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    -webkit-transform-origin:center top;
+    -moz-transform-origin:center top;
+    -o-transform-origin:center top;
+    -ms-transform-origin:center top;
+    transform-origin:center top;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 10;
+}
+
+#partes{
+    position: absolute;
+    top:px;
+    left:0;
+    width: 0px;
+    height: 0;
+    border-left: 256px solid hsla(240,100%,100%,1);
+    border-top: 139px solid transparent;
+    border-bottom: 199px solid transparent;
+    z-index: 5;
+}
+#poesia {
+     
+        font-size:1.4em;
+        text-shadow: 0px 1px 1px #f7ecec;
+        
+        
+}
+
+#partes:after{
+   
+    
+   
+}
+
+#partes:before{
+    content: "";
+    position: absolute;
+    top:-140px;
+    right:-146px;
+    width: 0;
+    height: 100px;
+    border-right: 402px solid hsla(240,100%,100%,1);
+    border-top: 220px solid transparent;
+    border-bottom: 200px solid hsla(240,100%,100%,1 );
+}
+
+
+#carta{
+    background-image: url(http://s3.amazonaws.com/bc.flashup.com/s3_222107_3151816_327746);
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 10px 10px hsla(240,100%,100%,1);
+    border-radius: 5px;
+    position: absolute;
+    top:3px;
+    left:0;
+    margin: 0 0 0 5px;
+    width: 390px;
+    height: 500px;
+    overflow: hidden;
+    z-index: 1;
+    color: #ffffff;
+}
+
+#carta p:first-of-type{
+    color: #ffffff;
+    text-shadow: 0px 1px 1px hsla(0,0%,100%,1);
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 80px;
+    margin-top: 4.7em;
+}
+
+#carta p :last-of-type{
+    color: #ffffff;;
+    text-shadow: 0px 1px 1px hsla(0,0%,100%,1);
+    font-size: 40em;
+    line-height:1.45em;
+    margin: 0 40px;
+}
+
+.icon-cancel{
+    cursor: pointer;
+    color: hsla(0,0%,70%,1);
+    font-size: 1.5em;
+    float: right;
+    text-align: center;
+    text-shadow: 0px 1px 1px hsla(0,0%,100%,1);
+    margin: 5px;
+}
+
+.icon-cancel:hover, .cara h1:hover{
+    color: hsla(0,84%,33%,1);
+}
+#Post_data{
+ 
+    
+}
+
+svg{
+    margin: 30px 0 10px 180px;
+}
+
+/******************************************************* animación */
+
+.rotar,
+.tapa,
+.rotar_,
+.tapa_,
+.bajarTop,
+.subirTop{
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+}
+
+.bajarTop_,
+.subirTop_{
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.rotar_,
+.bajarTop,
+.subirTop{
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	-ms-transition-delay: 1s;
+	transition-delay: 1s;
+}
+
+.tapa,
+.tapa_{
+	-webkit-transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+	-ms-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.rotar{
+  -webkit-transform: rotate3d(0,1,0,180deg);
+  -moz-transform: rotate3d(0,1,0,180deg);
+  -o-transform: rotate3d(0,1,0,180deg);
+  -ms-transform: rotate3d(0,1,0,180deg);
+  transform: rotate3d(0,1,0,180deg);
+}
+
+.tapa{
+	-webkit-transform: rotate3d(1,0,0,280deg);
+	-moz-transform: rotate3d(1,0,0,180deg);
+	-o-transform: rotate3d(1,0,0,180deg);
+	-ms-transform: rotate3d(1,0,0,180deg);
+	transform: rotate3d(1,0,0,180deg);
+    z-index: 0 !important;
+}
+
+.rotar_ {
+	-webkit-transform: rotate3d(0,1,0,0deg);
+	-moz-transform: rotate3d(0,1,0,0deg);
+	-o-transform: rotate3d(0,1,0,0deg);
+	-ms-transform: rotate3d(0,1,0,0deg);
+	transform: rotate3d(0,1,0,0deg);
+    
+   
+
+}
+
+.tapa_{
+	-webkit-transform: rotate3d(1,0,0,0deg);
+	-moz-transform: rotate3d(1,0,0,0deg);
+	-o-transform: rotate3d(1,0,0,0deg);
+	-ms-transform: rotate3d(1,0,0,0deg);
+	transform: rotate3d(1,0,0,0deg);
+    z-index: 10 !important;
+}
+
+.bajarTop{
+	-webkit-transform: translateY(-600px);
+	-moz-transform: translateY(-600px);
+	-o-transform: translateY(-600px);
+	-ms-transform: translateY(-600px);
+	transform: translateY(-600px);
+}
+
+.subirTop{
+	-webkit-transform: translateY(500px);
+	-moz-transform: translateY(500px);
+	-o-transform: translateY(500px);
+	-ms-transform: translateY(500px);
+	transform: translateY(500px);
+}
+
+.bajarTop_,
+.subirTop_{
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+        
+}
+
+@media screen and (max-width:1152px){
+ body{
+  background-image: url(../img/Amor-Embrace-720x1152.jpg);
+  height: 720px;
+    
+}
+
+}
+@media screen and (max-width:728px){
+ body{
+  background-image: url(../img/Amor-Embrace-485x728.jpg);
+  height: 485px;
+    
+}
+
+}
+
+@media screen and (max-width:80opx){
+ body{
+  background-image: url(../img/Amor-Embrace-480x800.jpg);
+  height: 480px;
+    
+}
+}

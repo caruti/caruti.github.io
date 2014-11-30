@@ -1,0 +1,158 @@
+ body { 
+   background-image: url(../img/Amor-Embrace-485x728.jpg);
+   background-repeat: no-repeat;
+  
+    }
+    html, body{
+   width: 1050px;
+   height: 1000px;
+   overflow: auto;  
+}
+
+
+body{
+  
+   background-image: url(../img/Amor-Embrace-1050x1680.jpg);
+   background-repeat: no-repeat;
+   width: 1050px;
+   height: 1000px;
+   
+}
+    
+    
+    
+
+
+
+#Perspectiva{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -200px;
+    -webkit-perspective:800;
+    -moz-perspective:800;
+    -o-perspective:800;
+    -ms-perspective:800;
+    perspective: 800;
+}
+
+#contenedor{
+    border-radius: 3px;
+    width: 200px;
+    height: 150px;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.cara{
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    backface-visibility:hidden;
+    
+}
+
+.cara h1{
+    cursor: help;
+    color: hsla(0,0%,20%,1);
+    text-shadow:  0px 1px 1px hsla(0,0%,100%,1);
+    font-family:'bad script', cursive;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 80px;
+}
+.frontal{
+    background: -webkit-linear-gradient(top, hsla(54,0%,96%,1) 0%, hsla(54,0%,56%,1) 100%);
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-80deg);
+    -o-transform:rotateY(-80deg);
+    -ms-transform:rotateY(-80deg);
+    transform:rotateY(-80deg);
+}
+
+.trasera{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 0;
+    width: 80px;
+    border-top: 90px solid hsla(0, 0%, 85%, 1);
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    -moz-transform-origin:center top;
+    -o-transform-origin:center top;
+    -ms-transform-origin:center top;
+    transform-origin:center top;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 10;
+    
+    
+}
+
+#partes{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border-left: 100px solid hsla(0, 0%, 90%, 1);
+    border-top:80px solid transparent;
+    border-bottom: 140px solid transparent;
+    z-index: 5;
+}
+
+#partes:after{
+    content: "";
+    position: absolute;
+    top:-90px;
+    right: -100px;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 80px solid transparent;
+    
+    
+    
+}
+#carta{
+    background-image: url(http://s3.amazonaws.com/bc.flashup.com/s3_222107_3151816_327746);
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    margin: 0 0 0 2px;
+    width: 220px;
+    height: 300px;
+    
+    
+    
+}
+
+#carta p:first-of-type{
+    color: hsla(0, 0%, 20%, 1 );
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 45px;
+    
+}
+
+#carta p:last-of-type{
+    color:hsla(0, 0%, 20%, 1 );
+    text-shadow: 0px 1px 1px hsla(0, 0%, 100%, 1);
+    font-size: 0.75em;
+    line-height: 1.45em
+}
+
+
+
